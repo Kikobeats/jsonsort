@@ -1,0 +1,15 @@
+Usage
+  $ jsonsort <file>[flags]
+
+Flags
+  --criteria  Specify the criteria to sort. It can be a key name or fat arrow function.
+  --quiet     Avoid print output
+  --reverse   Sort using reverse mode
+  --save      Write the output back. If a path is specified, it will be used over the original
+
+Examples
+  $ jsonsort file.json # Just output a sorted json
+  $ jsonsort file.json --criteria name # Sort an array of objects based on alphabetical `name` value.
+  $ jsonsort file.json --criteria 'x => x.featured' # Passing a function as criteria.
+  $ jsonsort file.json --criteria name --save # Sort and save the result.
+  $ jsonsort file.json --criteria name --save # Sort, save but dont print result.
