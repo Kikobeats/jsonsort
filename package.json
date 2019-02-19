@@ -1,5 +1,5 @@
 {
-  "name": "jsonsort",
+  "name": "@kikobeats/jsonsort",
   "description": "Sort an array of objects based on a criteria",
   "homepage": "https://nicedoc.io/Kikobeats/jsonsort",
   "version": "1.0.0",

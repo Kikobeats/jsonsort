@@ -1,15 +1,15 @@
-# jsonsort
+# @kikobeats/jsonsort
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/jsonsort.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/Kikobeats/jsonsort/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/jsonsort)
-[![NPM Status](https://img.shields.io/npm/dm/jsonsort.svg?style=flat-square)](https://www.npmjs.org/package/jsonsort)
+![Last version](https://img.shields.io/github/tag/Kikobeats/@kikobeats/jsonsort.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/Kikobeats/@kikobeats/jsonsort/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/@kikobeats/jsonsort)
+[![NPM Status](https://img.shields.io/npm/dm/@kikobeats/jsonsort.svg?style=flat-square)](https://www.npmjs.org/package/@kikobeats/jsonsort)
 
 > Sort an array of objects based on a criteria.
 
 ## Install
 
 ```bash
-$ npm install jsonsort --global
+$ npm install @kikobeats/jsonsort --global
 ```
 
 ## CLI
