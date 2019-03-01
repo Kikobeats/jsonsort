@@ -30,6 +30,7 @@
     "json-future": "~2.1.4",
     "lodash.sortby": "~4.7.0",
     "meow": "~5.0.0",
+    "sort-keys": "~2.0.0",
     "update-notifier": "~2.5.0"
   },
   "devDependencies": {

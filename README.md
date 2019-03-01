@@ -20,7 +20,6 @@ $ jsonsort <file>[flags]
 Flags
   --criteria  Specify the criteria to sort. It can be a key name or fat arrow function.
   --quiet     Avoid print output
-  --reverse   Sort using reverse mode
   --save      Write the output back. If a path is specified, it will be used over the original
 
 Examples
