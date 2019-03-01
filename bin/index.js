@@ -4,8 +4,9 @@
 const { compile } = require('es6-arrow-function')
 const beautyError = require('beauty-error')
 const jsonFuture = require('json-future')
-const sortBy = require('lodash.sortby')
 const sortKeys = require('sort-keys')
+const sortOn = require('sort-on')
+
 const path = require('path')
 
 const pkg = require('../package.json')
@@ -41,7 +42,7 @@ const main = async () => {
   let json = jsonFuture.load(file)
   const fn = getCriteria(criteria)
 
-  let sortedJson = Array.isArray(json) ? sortBy(json, fn) : sortKeys(json, { compare: fn })
+  let sortedJson = Array.isArray(json) ? sortOn(json, fn) : sortKeys(json, { compare: fn })
 
   if (save) jsonFuture.save(save !== true ? save : file, sortedJson)
   if (!quiet) console.log(sortedJson)
