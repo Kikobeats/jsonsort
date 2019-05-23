@@ -1,6 +1,6 @@
 {
   "name": "@kikobeats/jsonsort",
-  "description": "Sort an array of objects based on a criteria",
+  "description": "Sort an object or a collection of objects based on a criteria.",
   "homepage": "https://nicedoc.io/Kikobeats/jsonsort",
   "version": "1.1.2",
   "main": "index.js",
@@ -20,6 +20,9 @@
     "url": "https://github.com/Kikobeats/jsonsort/issues"
   },
   "keywords": [
+    "array",
+    "collection",
+    "compare",
     "json",
     "object",
     "sort"
@@ -29,9 +32,9 @@
     "es6-arrow-function": "~0.6.6",
     "json-future": "~2.1.4",
     "meow": "~5.0.0",
-    "sort-keys": "~2.0.0",
-    "sort-on": "~3.0.0",
-    "update-notifier": "~2.5.0"
+    "sort-keys": "~3.0.0",
+    "sort-on": "~4.0.0",
+    "update-notifier": "~3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",

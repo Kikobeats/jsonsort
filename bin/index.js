@@ -26,6 +26,7 @@ const cli = require('meow')({
 const compileCriteria = code => eval(compile(code).code) // eslint-disable-line no-eval
 
 const getCriteria = criteria => {
+  if (!criteria) return
   if (typeof criteria === 'string') return item => item[criteria]
   if (criteria.split(' ').length <= 1) return criteria
   if (!criteria.includes('=>')) {
