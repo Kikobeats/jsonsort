@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Kikobeats/jsonsort/compare/v1.2.0...v1.3.0) (2019-06-03)
+
+
+### Features
+
+* add stdin support ([bed364a](https://github.com/Kikobeats/jsonsort/commit/bed364a))
+
+
+
 ## [1.2.0](https://github.com/Kikobeats/jsonsort/compare/v1.1.2...v1.2.0) (2019-05-23)
 
 
