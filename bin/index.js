@@ -5,6 +5,7 @@ const { compile } = require('es6-arrow-function')
 const beautyError = require('beauty-error')
 const jsonFuture = require('json-future')
 const sortKeys = require('sort-keys')
+const getStdin = require('get-stdin')
 const sortOn = require('sort-on')
 
 const path = require('path')
@@ -35,18 +36,26 @@ const getCriteria = criteria => {
   return compileCriteria(criteria)
 }
 
-const main = async () => {
+const getInput = async cli => {
+  const input = await getStdin()
+  if (input) return { data: JSON.parse(input) }
+
   const [file] = cli.input
-  if (!file) cli.showHelp()
+  if (input) return { file, data: await jsonFuture.load(file) }
 
+  return null
+}
+
+const main = async () => {
+  const { file, data } = await getInput(cli)
   const { save, criteria, quiet } = cli.flags
-  let json = jsonFuture.load(file)
+
+  if (!data) cli.showHelp()
   const fn = getCriteria(criteria)
+  const sortedData = Array.isArray(data) ? sortOn(data, fn) : sortKeys(data, { compare: fn })
 
-  let sortedJson = Array.isArray(json) ? sortOn(json, fn) : sortKeys(json, { compare: fn })
-
-  if (save) jsonFuture.save(save !== true ? save : file, sortedJson)
-  if (!quiet) console.log(sortedJson)
+  if (save && file) jsonFuture.save(save !== true ? save : file, sortedData)
+  if (!quiet) console.log(JSON.stringify(sortedData, null, 2))
 }
 
 main()
