@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/Kikobeats/jsonsort/compare/v1.3.0...v1.3.1) (2019-06-19)
+
+
+### Build System
+
+* update travis ([9fdded0](https://github.com/Kikobeats/jsonsort/commit/9fdded0))
+
+
+
 ## [1.3.0](https://github.com/Kikobeats/jsonsort/compare/v1.2.0...v1.3.0) (2019-06-03)
 
 
