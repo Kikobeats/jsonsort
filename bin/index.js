@@ -41,7 +41,7 @@ const getInput = async cli => {
   if (input) return { data: JSON.parse(input) }
 
   const [file] = cli.input
-  if (input) return { file, data: await jsonFuture.load(file) }
+  if (file) return { file, data: await jsonFuture.load(file) }
 
   return null
 }
