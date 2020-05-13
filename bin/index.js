@@ -37,11 +37,11 @@ const getCriteria = criteria => {
 }
 
 const getInput = async cli => {
-  const input = await getStdin()
-  if (input) return { data: JSON.parse(input) }
-
   const [file] = cli.input
   if (file) return { file, data: await jsonFuture.load(file) }
+
+  const input = await getStdin()
+  if (input) return { data: JSON.parse(input) }
 
   return null
 }
