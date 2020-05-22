@@ -52,7 +52,9 @@ const main = async () => {
 
   if (!data) cli.showHelp()
   const fn = getCriteria(criteria)
-  const sortedData = Array.isArray(data) ? sortOn(data, fn) : sortKeys(data, { compare: fn })
+  const sortedData = Array.isArray(data)
+    ? sortOn(data, fn)
+    : sortKeys(data, { deep: true, compare: fn })
 
   if (save && file) jsonFuture.save(save !== true ? save : file, sortedData)
   if (!quiet) console.log(JSON.stringify(sortedData, null, 2))
