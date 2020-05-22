@@ -31,6 +31,12 @@ Examples
 
 ```
 
+It's easy to complement with others UNIX commands, like `jq`:
+
+```bash
+jq .redirects now.json | jsonsort --criteria source
+```
+
 ## License
 
 **jsonsort** © [Kiko Beats](https://kikobeats.com), released under the [MIT](https://github.com/Kikobeats/jsonsort/blob/master/LICENSE.md) License.<br>
