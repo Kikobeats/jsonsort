@@ -33,7 +33,7 @@
     "get-stdin": "~8.0.0",
     "json-future": "~2.2.4",
     "meow": "~7.1.0",
-    "sort-keys": "~4.0.0",
+    "sort-keys": "~4.1.0",
     "sort-on": "~4.1.0",
     "update-notifier": "~5.0.0"
   },
