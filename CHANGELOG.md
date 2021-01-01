@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.16](https://github.com/Kikobeats/jsonsort/compare/v1.3.15...v1.3.16) (2021-01-01)
+
 ### [1.3.15](https://github.com/Kikobeats/jsonsort/compare/v1.3.14...v1.3.15) (2020-12-25)
 
 ### [1.3.14](https://github.com/Kikobeats/jsonsort/compare/v1.3.13...v1.3.14) (2020-10-30)
