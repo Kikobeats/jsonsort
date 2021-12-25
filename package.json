@@ -28,10 +28,10 @@
     "sort"
   ],
   "dependencies": {
-    "beauty-error": "~1.2.4",
+    "beauty-error": "~1.2.9",
     "es6-arrow-function": "~0.6.6",
     "get-stdin": "~8.0.0",
-    "json-future": "~2.2.4",
+    "json-future": "~2.2.14",
     "meow": "~9.0.0",
     "sort-keys": "~4.2.0",
     "sort-on": "~4.1.0",
@@ -45,10 +45,10 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "simple-git-hooks": "latest",
     "nano-staged": "latest",
     "npm-check-updates": "latest",
     "prettier-standard": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
@@ -81,19 +81,19 @@
       "@commitlint/config-conventional"
     ]
   },
-  "simple-git-hooks": {
-  "commit-msg": "npx commitlint --edit",
-  "pre-commit": "npx nano-staged"
-},
   "nano-staged": {
-    "package.json": [
-      "finepack"
-    ],
     "*.js": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
+    ],
+    "package.json": [
+      "finepack"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx nano-staged"
   }
 }
