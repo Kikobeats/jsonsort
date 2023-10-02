@@ -34,7 +34,7 @@
     "json-future": "~2.2.14",
     "meow": "~9.0.0",
     "sort-keys": "~4.2.0",
-    "sort-on": "~4.1.0",
+    "sort-on": "~6.0.0",
     "update-notifier": "~5.1.0"
   },
   "devDependencies": {
